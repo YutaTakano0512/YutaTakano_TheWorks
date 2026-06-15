@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3925210E-11A5-4D1E-8D1B-AF601462B8B4}</ProjectGuid>
+    <RootNamespace>My20240423DX21</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>20240625_DX21</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>main</TargetName>
+    <MultiProcFXC>true</MultiProcFXC>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>main</TargetName>
+    <MultiProcFXC>true</MultiProcFXC>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>rom\shader\%(Filename).cso</ObjectFileOutput>
+      <EnableDebuggingInformation>false</EnableDebuggingInformation>
+      <AdditionalOptions>/Qstrip_debug</AdditionalOptions>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>rom\shader\%(Filename).cso</ObjectFileOutput>
+      <AdditionalOptions>/Qstrip_debug</AdditionalOptions>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Core\app_event.cpp" />
+    <ClCompile Include="source\Core\debug_ostream.cpp" />
+    <ClCompile Include="source\Core\DirectX\Audio.cpp" />
+    <ClCompile Include="source\Core\DirectX\dx_camera.cpp" />
+    <ClCompile Include="source\Core\DirectX\dx_model.cpp" />
+    <ClCompile Include="source\Core\DirectX\dx_video_texture.cpp" />
+    <ClCompile Include="source\Core\Multi\winsock.cpp" />
+    <ClCompile Include="source\Core\Multi\winsock_client.cpp" />
+    <ClCompile Include="source\Core\Multi\winsock_server.cpp" />
+    <ClCompile Include="source\Game\Game Events\GE_Gaya.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Base.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_EnemyProjectile.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Boss_Inperiusu.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Satellite.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Boss_Kontoriusu.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Miresu.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Miresu_Hyper.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Regatosu.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Rucs.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_PlayerProjectile.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_CA.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_KAI.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_KN.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_NEO.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Effect.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Item.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_ItemTransporter.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_ObjectDynamic.cpp" />
+    <ClCompile Include="source\Game\Game Stage\Stage_Base.cpp" />
+    <ClCompile Include="source\Game\Game Stage\Stage_Ruins.cpp" />
+    <ClCompile Include="source\Game\Game Stage\Stage_Simulation.cpp" />
+    <ClCompile Include="source\Game\Game Stage\Stage_Tutorial.cpp" />
+    <ClCompile Include="source\Game\Managers\bg.cpp" />
+    <ClCompile Include="source\Game\Entities\Block\block.cpp" />
+    <ClCompile Include="source\Game\Entities\Block\blockPrefab.cpp" />
+    <ClCompile Include="source\Game\Managers\StageManager.cpp" />
+    <ClCompile Include="source\Game\Polygon\modelData.cpp" />
+    <ClCompile Include="source\Game\Polygon\polygon.cpp" />
+    <ClCompile Include="source\Game\Systems\camera.cpp" />
+    <ClCompile Include="source\Game\Entities\character.cpp" />
+    <ClCompile Include="source\Game\Systems\collision.cpp" />
+    <ClCompile Include="source\Core\Input\controller_main.cpp" />
+    <ClCompile Include="source\Game\Systems\easing.cpp" />
+    <ClCompile Include="source\Game\Systems\enum.cpp" />
+    <ClCompile Include="source\Game\Systems\fade.cpp" />
+    <ClCompile Include="source\Game\Systems\font.cpp" />
+    <ClCompile Include="source\Game\Managers\gameEvent.cpp" />
+    <ClCompile Include="source\Game\Game Events\GE_Shoot.cpp" />
+    <ClCompile Include="source\Game\Managers\gameManager.cpp" />
+    <ClCompile Include="source\Game\Game Map\gameMap.cpp" />
+    <ClCompile Include="source\Game\Game Map\gameMap_dataFile.cpp" />
+    <ClCompile Include="source\Game\Game Object\gameObject.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_General.cpp" />
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Test.cpp" />
+    <ClCompile Include="source\Game\Game Object\gameObjectGraph.cpp" />
+    <ClCompile Include="source\Game\Game Object\gameObjectPrefab.cpp" />
+    <ClCompile Include="source\Game\Systems\movie.cpp" />
+    <ClCompile Include="source\Game\Systems\ui_Confirm.cpp" />
+    <ClCompile Include="source\Game\Systems\ui_ContinueMenu.cpp" />
+    <ClCompile Include="source\Game\Systems\ui_Game.cpp" />
+    <ClCompile Include="source\Game\Systems\ui_PauseMenu.cpp" />
+    <ClCompile Include="source\list.cpp" />
+    <ClCompile Include="source\game_main.cpp" />
+    <ClCompile Include="source\Game\Entities\player.cpp" />
+    <ClCompile Include="source\Game\Managers\scene.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_Character_Select.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_Editor.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_Game.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_MultiClient.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_Op.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_Result.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_SingleBossBattle.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_SoundRoom.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_StageSelect.cpp" />
+    <ClCompile Include="source\Scenes\SCENE_Title.cpp" />
+    <ClCompile Include="source\Game\Systems\sound.cpp" />
+    <ClCompile Include="source\Game\Sound\soundData.cpp" />
+    <ClCompile Include="source\Game\Managers\soundManager.cpp" />
+    <ClCompile Include="source\Game\Sprite\sprite.cpp" />
+    <ClCompile Include="source\Game\Sprite\spriteAnim.cpp" />
+    <ClCompile Include="source\Game\Sprite\spriteGraph.cpp" />
+    <ClCompile Include="source\Game\Sprite\spriteNumber.cpp" />
+    <ClCompile Include="source\Game\Systems\system.cpp" />
+    <ClCompile Include="source\Game\Systems\sys_general.cpp" />
+    <ClCompile Include="source\Game\Texture\texData.cpp" />
+    <ClCompile Include="source\Game\Texture\texture.cpp" />
+    <ClCompile Include="source\titlebg.cpp" />
+    <ClCompile Include="source\Game\Systems\ui.cpp" />
+    <ClCompile Include="source\Core\DirectX\dx.cpp" />
+    <ClCompile Include="source\Core\DirectX\dx_font.cpp" />
+    <ClCompile Include="source\Core\DirectX\dx_game.cpp" />
+    <ClCompile Include="source\Core\Input\keyboard.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\Core\Input\mouse.cpp" />
+    <ClCompile Include="source\Core\DirectX\dx_sound.cpp" />
+    <ClCompile Include="source\Core\DirectX\dx_shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Core\app_event.h" />
+    <ClInclude Include="source\Core\debug_ostream.h" />
+    <ClInclude Include="source\Core\DirectX\Audio.h" />
+    <ClInclude Include="source\Core\DirectX\dx_camera.h" />
+    <ClInclude Include="source\Core\DirectX\dx_model.h" />
+    <ClInclude Include="source\Core\DirectX\dx_video_texture.h" />
+    <ClInclude Include="source\Core\Multi\winsock.h" />
+    <ClInclude Include="source\Core\Multi\winsock_client.h" />
+    <ClInclude Include="source\Core\Multi\winsock_server.h" />
+    <ClInclude Include="source\Core\WindowsErrorEscape.h" />
+    <ClInclude Include="source\Core\_sysms.h" />
+    <ClInclude Include="source\Core\_systemModeSwitch.h" />
+    <ClInclude Include="source\Game\Configuration\configuration.h" />
+    <ClInclude Include="source\Game\Game Events\GE_Gaya.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Base.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_EnemyProjectile.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Boss_Inperiusu.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Satellite.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Boss_Kontoriusu.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Miresu.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Miresu_Hyper.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Regatosu.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Rucs.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_PlayerProjectile.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_CA.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_KAI.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_KN.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_NEO.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Effect.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Item.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_ItemTransporter.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_ObjectDynamic.h" />
+    <ClInclude Include="source\Game\Game Object\gameObjectEventSetter.h" />
+    <ClInclude Include="source\Game\Game Stage\Stage_Base.h" />
+    <ClInclude Include="source\Game\Game Stage\Stage_Ruins.h" />
+    <ClInclude Include="source\Game\Game Stage\Stage_Simulation.h" />
+    <ClInclude Include="source\Game\Game Stage\Stage_Tutorial.h" />
+    <ClInclude Include="source\Game\Managers\bg.h" />
+    <ClInclude Include="source\Game\Entities\Block\block.h" />
+    <ClInclude Include="source\Game\Entities\Block\blockPrefab.h" />
+    <ClInclude Include="source\Game\Managers\StageManager.h" />
+    <ClInclude Include="source\Game\Polygon\modelData.h" />
+    <ClInclude Include="source\Game\Polygon\polygon.h" />
+    <ClInclude Include="source\Game\Systems\camera.h" />
+    <ClInclude Include="source\Game\Entities\character.h" />
+    <ClInclude Include="source\Game\Systems\collision.h" />
+    <ClInclude Include="source\Core\Input\controller_main.h" />
+    <ClInclude Include="source\Game\Systems\easing.h" />
+    <ClInclude Include="source\Game\Systems\enum.h" />
+    <ClInclude Include="source\Game\Systems\fade.h" />
+    <ClInclude Include="source\Game\Systems\font.h" />
+    <ClInclude Include="source\Game\Managers\gameEvent.h" />
+    <ClInclude Include="source\Game\Game Events\GE_Shoot.h" />
+    <ClInclude Include="source\Game\Managers\gameManager.h" />
+    <ClInclude Include="source\Game\Game Map\gameMap.h" />
+    <ClInclude Include="source\Game\Game Map\gameMapGeneral.h" />
+    <ClInclude Include="source\Game\Game Map\gameMap_dataFile.h" />
+    <ClInclude Include="source\Game\Game Object\gameObject.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_General.h" />
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Test.h" />
+    <ClInclude Include="source\Game\Game Object\gameObjectGraph.h" />
+    <ClInclude Include="source\Game\Game Object\gameObjectPrefab.h" />
+    <ClInclude Include="source\Game\Game Object\gameObjectTypes.h" />
+    <ClInclude Include="source\Game\Systems\movie.h" />
+    <ClInclude Include="source\Game\Systems\ui_Confirm.h" />
+    <ClInclude Include="source\Game\Systems\ui_ContinueMenu.h" />
+    <ClInclude Include="source\Game\Systems\ui_Game.h" />
+    <ClInclude Include="source\Game\Systems\ui_PauseMenu.h" />
+    <ClInclude Include="source\list.h" />
+    <ClInclude Include="source\game_main.h" />
+    <ClInclude Include="source\Game\Configuration\Param.h" />
+    <ClInclude Include="source\Game\Entities\player.h" />
+    <ClInclude Include="source\Game\Managers\scene.h" />
+    <ClInclude Include="source\Scenes\SCENE_Character_Select.h" />
+    <ClInclude Include="source\Scenes\SCENE_Editor.h" />
+    <ClInclude Include="source\Scenes\SCENE_Game.h" />
+    <ClInclude Include="source\Scenes\SCENE_MultiClient.h" />
+    <ClInclude Include="source\Scenes\SCENE_Op.h" />
+    <ClInclude Include="source\Scenes\SCENE_Result.h" />
+    <ClInclude Include="source\Scenes\SCENE_SingleBossBattle.h" />
+    <ClInclude Include="source\Scenes\SCENE_SoundRoom.h" />
+    <ClInclude Include="source\Scenes\SCENE_StageSelect.h" />
+    <ClInclude Include="source\Scenes\SCENE_Title.h" />
+    <ClInclude Include="source\Game\Systems\sound.h" />
+    <ClInclude Include="source\Game\Sound\soundData.h" />
+    <ClInclude Include="source\Game\Managers\soundManager.h" />
+    <ClInclude Include="source\Game\Sprite\sprite.h" />
+    <ClInclude Include="source\Game\Sprite\spriteAnim.h" />
+    <ClInclude Include="source\Game\Sprite\spriteGraph.h" />
+    <ClInclude Include="source\Game\Sprite\spriteNumber.h" />
+    <ClInclude Include="source\Game\Systems\system.h" />
+    <ClInclude Include="source\Game\Systems\sys_general.h" />
+    <ClInclude Include="source\Game\Texture\texData.h" />
+    <ClInclude Include="source\Game\Texture\texture.h" />
+    <ClInclude Include="source\Shader\commonBindings.h" />
+    <ClInclude Include="source\titlebg.h" />
+    <ClInclude Include="source\Game\Systems\ui.h" />
+    <ClInclude Include="source\Core\debugPrintf.h" />
+    <ClInclude Include="source\Core\DirectX\dx.h" />
+    <ClInclude Include="source\Core\DirectX\dx_font.h" />
+    <ClInclude Include="source\Core\DirectX\dx_game.h" />
+    <ClInclude Include="source\Core\Input\keyboard.h" />
+    <ClInclude Include="source\main.h" />
+    <ClInclude Include="source\Core\Input\mouse.h" />
+    <ClInclude Include="source\Core\resource.h" />
+    <ClInclude Include="source\Core\DirectX\dx_sound.h" />
+    <ClInclude Include="source\Core\DirectX\dx_shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="20240625_DX21.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="rom\texture\circlen_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="source\Shader\common.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="source\Shader\commonConstantBuffer.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\common.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_blur.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_bossbar_gradient.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_bossbar_sub_gradient.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_cutin.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_cutin_metal_enemy.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_cutin_metal_enemy_2.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_cutin_name.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_default.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_dis.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_dissolve.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_effect.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_fade_clock.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_gage_gradient.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_hpbar_gradient.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_hpbar_sub_gradient.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_metal_enemy_dark.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_fresnel.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_metal.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_metal_enemy.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_metal_enemy_2.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_no_uv_loop.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_ui_bg_general.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\general\ps_warp.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\general\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\gs_point_sprite.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_bg_tutorial.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_bg_tutorial_floor.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_bg_tutorial_ring.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_bloom.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_outline.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_outlineBuf.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_video.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_world_fog.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_world_general.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_world_iseki.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_world_iseki_boss.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_world_iseki_destroystage.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_world_iseki_mutation.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_world_lightningbug.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\ps_world_tutorial_stage_effect.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\vs_general.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\vs_general2.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="source\Shader\vs_world_fog.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\vs_world_lightningbug.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rom\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="source\Shader\vs_world_tutorial_stage_effect.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

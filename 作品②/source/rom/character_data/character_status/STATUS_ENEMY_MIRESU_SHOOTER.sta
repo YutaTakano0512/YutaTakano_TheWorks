@@ -1,0 +1,23 @@
+//ステータス
+
+//名前(正式名称)
+fullName: 狙撃型ミレス
+
+//名前(通称)
+nickName: ミレスS
+
+//体力
+hp: 100
+//接触ダメージ判定の参照ファイル名
+defaultColAtkName: COL_ATK_ENEMY_MIRESU
+
+//種類
+family: ENEMY
+
+//ステータスのタイプ
+statusType: ENEMY_SMALL
+
+//見た目の調整パラメータ
+scale: 0.8
+posY: 255.0
+posZ: -15.0

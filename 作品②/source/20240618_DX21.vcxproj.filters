@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Scenes">
+      <UniqueIdentifier>{75ac7728-95d0-4104-ac1f-1fcc2bdc1fe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core">
+      <UniqueIdentifier>{26b46c05-8e17-44f3-827e-14d86ba679c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core\DirectX">
+      <UniqueIdentifier>{f0349a1e-4ee7-44c0-a541-79fe5135a1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core\Input">
+      <UniqueIdentifier>{8410948d-354a-4ff2-94b7-e3f536b04ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scenes">
+      <UniqueIdentifier>{ddfeb1a6-6544-4002-9712-282f255f7b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Managers">
+      <UniqueIdentifier>{71965927-d663-4da9-a946-eb7a338076ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game">
+      <UniqueIdentifier>{5dde1fa1-9cd2-4157-a9ca-13feb081e101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Systems">
+      <UniqueIdentifier>{a62b0ccc-2e8a-4049-a3b2-b5da98fb27ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Sprite">
+      <UniqueIdentifier>{f795c823-12ca-4f16-b53d-7ea5907ca62c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Texture">
+      <UniqueIdentifier>{c38657b7-9a2f-4bb6-9315-c90345d5953a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Entities">
+      <UniqueIdentifier>{d2db4cd0-5682-4296-ba54-189ca7175ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Entities\Block">
+      <UniqueIdentifier>{e3137ee1-197a-460a-96c9-f70ff7d56fbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Sound">
+      <UniqueIdentifier>{a06dc187-0088-408b-8295-6909faf11b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core">
+      <UniqueIdentifier>{6de80068-5595-4fe4-90f9-771325f483f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core\DirectX">
+      <UniqueIdentifier>{43f62cf5-85fc-4bb3-a327-44830e16e685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core\Input">
+      <UniqueIdentifier>{aa965594-c9b7-4322-a439-f7cab5d79558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Managers">
+      <UniqueIdentifier>{5cfd08ef-0c68-4fca-8366-9dedd2bb3a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game">
+      <UniqueIdentifier>{45ca77a5-53ef-4ea6-8e9f-48adeb014e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Entities">
+      <UniqueIdentifier>{c56dadf1-ea1d-42c3-a6ab-404825bd024a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Entities\Block">
+      <UniqueIdentifier>{bb4d0dde-1913-4270-8e62-7d2c853722a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Sound">
+      <UniqueIdentifier>{dfeb3c5c-7ecf-4237-9f87-e4c90e24f38f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Texture">
+      <UniqueIdentifier>{4375ec32-49a2-41eb-8ca9-66f6d07ce25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Sprite">
+      <UniqueIdentifier>{a69e0d10-236b-4cb2-941c-919c00974375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Systems">
+      <UniqueIdentifier>{0e8f0e62-2272-4bd5-88e5-8d9f65d24515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Game Map">
+      <UniqueIdentifier>{f6339996-16f0-404c-9dc6-96f0e1d1d679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Game Map">
+      <UniqueIdentifier>{f05a727c-0c98-4757-9869-b1c7e61137a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Game Object">
+      <UniqueIdentifier>{1dfdad96-e487-4a09-a434-7673df7eddeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Game Events">
+      <UniqueIdentifier>{abed36d0-11fb-48fd-a646-1d26e51d0f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Game Object\Game Object Events">
+      <UniqueIdentifier>{b86dfbaa-16bc-4bc8-b4c4-9f7871da7bd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Game Events">
+      <UniqueIdentifier>{f5ac4892-8477-4b01-95a5-8514976af4bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Game Object">
+      <UniqueIdentifier>{4560983e-6429-4ff9-b628-4eed63158289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Game Object\Game Object Events">
+      <UniqueIdentifier>{49a25215-afbd-4ec4-b97a-d4d9fbfb6512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Configuration">
+      <UniqueIdentifier>{3dafb60e-c21e-4f8b-8e15-94f9f81bf0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Polygon">
+      <UniqueIdentifier>{d92531de-168f-4cdb-b1bc-287ce8d5dae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Polygon">
+      <UniqueIdentifier>{2d19d2d8-03eb-4ea8-be78-ea21327344aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy">
+      <UniqueIdentifier>{5f805a30-1eae-4fb2-a739-14bb2b81e786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy">
+      <UniqueIdentifier>{3a80ac2d-1405-4692-b84f-c54ad29f2905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Game Stage">
+      <UniqueIdentifier>{3b3fd708-8f58-4a24-a9ad-46013e842b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Game Stage">
+      <UniqueIdentifier>{9d772dd4-d871-4b34-a806-40c323af67fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core\Multi">
+      <UniqueIdentifier>{825c3eef-df7f-4c83-97de-092460449256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core\Multi">
+      <UniqueIdentifier>{56b095aa-8523-4cef-b17d-e778b2084f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Player">
+      <UniqueIdentifier>{2c3e67e7-f385-4e57-9449-74f8f072669f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Player">
+      <UniqueIdentifier>{2b4e5997-0909-4766-ae0d-aaa986d81c14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\game_main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\titlebg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\list.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_Editor.cpp">
+      <Filter>ソース ファイル\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_Game.cpp">
+      <Filter>ソース ファイル\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_Title.cpp">
+      <Filter>ソース ファイル\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_Result.cpp">
+      <Filter>ソース ファイル\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_General.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Test.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Events\GE_Shoot.cpp">
+      <Filter>ソース ファイル\Game\Game Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\Audio.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\dx.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\dx_font.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\dx_game.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\dx_shader.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\dx_sound.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\Input\controller_main.cpp">
+      <Filter>ソース ファイル\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Managers\soundManager.cpp">
+      <Filter>ソース ファイル\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Managers\scene.cpp">
+      <Filter>ソース ファイル\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Managers\gameManager.cpp">
+      <Filter>ソース ファイル\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\ui.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\sys_general.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\collision.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\camera.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\font.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\easing.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Sprite\sprite.cpp">
+      <Filter>ソース ファイル\Game\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Sprite\spriteAnim.cpp">
+      <Filter>ソース ファイル\Game\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Sprite\spriteGraph.cpp">
+      <Filter>ソース ファイル\Game\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Sprite\spriteNumber.cpp">
+      <Filter>ソース ファイル\Game\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\sound.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\system.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Texture\texData.cpp">
+      <Filter>ソース ファイル\Game\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Texture\texture.cpp">
+      <Filter>ソース ファイル\Game\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Managers\bg.cpp">
+      <Filter>ソース ファイル\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Entities\Block\block.cpp">
+      <Filter>ソース ファイル\Game\Entities\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Entities\Block\blockPrefab.cpp">
+      <Filter>ソース ファイル\Game\Entities\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Entities\player.cpp">
+      <Filter>ソース ファイル\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Entities\character.cpp">
+      <Filter>ソース ファイル\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Sound\soundData.cpp">
+      <Filter>ソース ファイル\Game\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\Input\keyboard.cpp">
+      <Filter>ソース ファイル\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\Input\mouse.cpp">
+      <Filter>ソース ファイル\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Map\gameMap_dataFile.cpp">
+      <Filter>ソース ファイル\Game\Game Map</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Map\gameMap.cpp">
+      <Filter>ソース ファイル\Game\Game Map</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Managers\gameEvent.cpp">
+      <Filter>ソース ファイル\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\gameObject.cpp">
+      <Filter>ソース ファイル\Game\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\gameObjectGraph.cpp">
+      <Filter>ソース ファイル\Game\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\gameObjectPrefab.cpp">
+      <Filter>ソース ファイル\Game\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\fade.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\dx_camera.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\enum.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\dx_model.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Polygon\polygon.cpp">
+      <Filter>ソース ファイル\Polygon</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\ui_Game.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_Character_Select.cpp">
+      <Filter>ソース ファイル\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_StageSelect.cpp">
+      <Filter>ソース ファイル\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Base.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Miresu.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Boss_Inperiusu.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Miresu_Hyper.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Stage\Stage_Ruins.cpp">
+      <Filter>ソース ファイル\Game\Game Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Stage\Stage_Base.cpp">
+      <Filter>ソース ファイル\Game\Game Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Regatosu.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\Multi\winsock.cpp">
+      <Filter>ソース ファイル\Core\Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\Multi\winsock_server.cpp">
+      <Filter>ソース ファイル\Core\Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\Multi\winsock_client.cpp">
+      <Filter>ソース ファイル\Core\Multi</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_MultiClient.cpp">
+      <Filter>ソース ファイル\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Polygon\modelData.cpp">
+      <Filter>ソース ファイル\Polygon</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_CA.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_KN.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Effect.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Boss_Kontoriusu.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_EnemyProjectile.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_KAI.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_NEO.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Events\GE_Gaya.cpp">
+      <Filter>ソース ファイル\Game\Game Events</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\DirectX\dx_video_texture.cpp">
+      <Filter>ソース ファイル\Core\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\movie.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Stage\Stage_Tutorial.cpp">
+      <Filter>ソース ファイル\Game\Game Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Managers\StageManager.cpp">
+      <Filter>ソース ファイル\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_PlayerProjectile.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\ui_Confirm.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\ui_PauseMenu.cpp">
+      <Filter>ソース ファイル\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Rucs.cpp">
+      <Filter>ソース ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_SoundRoom.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Systems\ui_ContinueMenu.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\app_event.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Item.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_ItemTransporter.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Satellite.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core\debug_ostream.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Stage\Stage_Simulation.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Game\Game Object\Game Object Events\GOE_ObjectDynamic.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_SingleBossBattle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scenes\SCENE_Op.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\game_main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\titlebg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\list.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_Title.h">
+      <Filter>ヘッダー ファイル\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_Result.h">
+      <Filter>ヘッダー ファイル\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_Game.h">
+      <Filter>ヘッダー ファイル\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_Editor.h">
+      <Filter>ヘッダー ファイル\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Test.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_General.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Events\GE_Shoot.h">
+      <Filter>ヘッダー ファイル\Game\Game Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\Audio.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\dx.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\dx_font.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\dx_game.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\dx_shader.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\dx_sound.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\Input\keyboard.h">
+      <Filter>ヘッダー ファイル\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\Input\mouse.h">
+      <Filter>ヘッダー ファイル\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\debugPrintf.h">
+      <Filter>ヘッダー ファイル\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\Input\controller_main.h">
+      <Filter>ヘッダー ファイル\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Managers\bg.h">
+      <Filter>ヘッダー ファイル\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Managers\gameManager.h">
+      <Filter>ヘッダー ファイル\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Managers\scene.h">
+      <Filter>ヘッダー ファイル\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Managers\soundManager.h">
+      <Filter>ヘッダー ファイル\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Entities\Block\blockPrefab.h">
+      <Filter>ヘッダー ファイル\Game\Entities\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Entities\Block\block.h">
+      <Filter>ヘッダー ファイル\Game\Entities\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Entities\character.h">
+      <Filter>ヘッダー ファイル\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Entities\player.h">
+      <Filter>ヘッダー ファイル\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Sound\soundData.h">
+      <Filter>ヘッダー ファイル\Game\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Texture\texture.h">
+      <Filter>ヘッダー ファイル\Game\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Texture\texData.h">
+      <Filter>ヘッダー ファイル\Game\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Sprite\sprite.h">
+      <Filter>ヘッダー ファイル\Game\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Sprite\spriteAnim.h">
+      <Filter>ヘッダー ファイル\Game\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Sprite\spriteGraph.h">
+      <Filter>ヘッダー ファイル\Game\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Sprite\spriteNumber.h">
+      <Filter>ヘッダー ファイル\Game\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\camera.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\collision.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\easing.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\font.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\sound.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\sys_general.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\system.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\ui.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Managers\gameEvent.h">
+      <Filter>ヘッダー ファイル\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Map\gameMap.h">
+      <Filter>ヘッダー ファイル\Game\Game Map</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Map\gameMap_dataFile.h">
+      <Filter>ヘッダー ファイル\Game\Game Map</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Map\gameMapGeneral.h">
+      <Filter>ヘッダー ファイル\Game\Game Map</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\gameObject.h">
+      <Filter>ヘッダー ファイル\Game\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\gameObjectGraph.h">
+      <Filter>ヘッダー ファイル\Game\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\gameObjectPrefab.h">
+      <Filter>ヘッダー ファイル\Game\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\gameObjectTypes.h">
+      <Filter>ヘッダー ファイル\Game\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Configuration\configuration.h">
+      <Filter>ヘッダー ファイル\Game\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Configuration\Param.h">
+      <Filter>ヘッダー ファイル\Game\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\resource.h">
+      <Filter>ヘッダー ファイル\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\_systemModeSwitch.h">
+      <Filter>ヘッダー ファイル\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\_sysms.h">
+      <Filter>ヘッダー ファイル\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\fade.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\dx_camera.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\enum.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\dx_model.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Polygon\polygon.h">
+      <Filter>ヘッダー ファイル\Polygon</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\ui_Game.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_Character_Select.h">
+      <Filter>ヘッダー ファイル\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_StageSelect.h">
+      <Filter>ヘッダー ファイル\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\gameObjectEventSetter.h">
+      <Filter>ヘッダー ファイル\Game\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Base.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Miresu.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Boss_Inperiusu.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Miresu_Hyper.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Stage\Stage_Ruins.h">
+      <Filter>ヘッダー ファイル\Game\Game Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Stage\Stage_Base.h">
+      <Filter>ヘッダー ファイル\Game\Game Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Regatosu.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\Multi\winsock.h">
+      <Filter>ヘッダー ファイル\Core\Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\Multi\winsock_client.h">
+      <Filter>ヘッダー ファイル\Core\Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\Multi\winsock_server.h">
+      <Filter>ヘッダー ファイル\Core\Multi</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_MultiClient.h">
+      <Filter>ヘッダー ファイル\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\WindowsErrorEscape.h">
+      <Filter>ヘッダー ファイル\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Polygon\modelData.h">
+      <Filter>ヘッダー ファイル\Polygon</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_CA.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_KN.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Effect.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Boss_Kontoriusu.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_EnemyProjectile.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_KAI.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_Player_NEO.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Events\GE_Gaya.h">
+      <Filter>ヘッダー ファイル\Game\Game Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\DirectX\dx_video_texture.h">
+      <Filter>ヘッダー ファイル\Core\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\movie.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Stage\Stage_Tutorial.h">
+      <Filter>ヘッダー ファイル\Game\Game Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Managers\StageManager.h">
+      <Filter>ヘッダー ファイル\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Player\GOE_Character_PlayerProjectile.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\ui_Confirm.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\ui_PauseMenu.h">
+      <Filter>ヘッダー ファイル\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Rucs.h">
+      <Filter>ヘッダー ファイル\Game\Game Object\Game Object Events\GOE_Character_Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_SoundRoom.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Systems\ui_ContinueMenu.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\app_event.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Item.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_ItemTransporter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_Character_Enemy\GOE_Character_Enemy_Satellite.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Core\debug_ostream.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Stage\Stage_Simulation.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Game\Game Object\Game Object Events\GOE_ObjectDynamic.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Shader\commonBindings.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_SingleBossBattle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Scenes\SCENE_Op.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="20240625_DX21.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="rom\texture\circlen_icon.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="icon1.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="source\Shader\general\ps_cutin.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_dis.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_dissolve.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_effect.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_metal_enemy_dark.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_fresnel.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_metal.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_metal_enemy.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_metal_enemy_2.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_warp.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_default.hlsl" />
+    <FxCompile Include="source\Shader\general\common.hlsl" />
+    <FxCompile Include="source\Shader\common.hlsl" />
+    <FxCompile Include="source\Shader\ps_bloom.hlsl" />
+    <FxCompile Include="source\Shader\ps_outline.hlsl" />
+    <FxCompile Include="source\Shader\ps_outlineBuf.hlsl" />
+    <FxCompile Include="source\Shader\ps_video.hlsl" />
+    <FxCompile Include="source\Shader\ps_world_iseki.hlsl" />
+    <FxCompile Include="source\Shader\ps_world_iseki_boss.hlsl" />
+    <FxCompile Include="source\Shader\ps_world_iseki_mutation.hlsl" />
+    <FxCompile Include="source\Shader\vs_general.hlsl" />
+    <FxCompile Include="source\Shader\vs_general2.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_cutin.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_cutin_metal_enemy.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_cutin_metal_enemy_2.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_blur.hlsl" />
+    <FxCompile Include="source\Shader\ps_world_general.hlsl" />
+    <FxCompile Include="source\Shader\vs_world_lightningbug.hlsl" />
+    <FxCompile Include="source\Shader\ps_world_lightningbug.hlsl" />
+    <FxCompile Include="source\Shader\commonConstantBuffer.hlsl" />
+    <FxCompile Include="source\Shader\gs_point_sprite.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_no_uv_loop.hlsl" />
+    <FxCompile Include="source\Shader\ps_world_fog.hlsl" />
+    <FxCompile Include="source\Shader\vs_world_fog.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_cutin_name.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_gage_gradient.hlsl" />
+    <FxCompile Include="source\Shader\ps_bg_tutorial.hlsl" />
+    <FxCompile Include="source\Shader\ps_bg_tutorial_floor.hlsl" />
+    <FxCompile Include="source\Shader\ps_world_tutorial_stage_effect.hlsl" />
+    <FxCompile Include="source\Shader\vs_world_tutorial_stage_effect.hlsl" />
+    <FxCompile Include="source\Shader\ps_bg_tutorial_ring.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_hpbar_gradient.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_hpbar_sub_gradient.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_bossbar_gradient.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_bossbar_sub_gradient.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_ui_bg_general.hlsl" />
+    <FxCompile Include="source\Shader\general\ps_fade_clock.hlsl" />
+    <FxCompile Include="source\Shader\ps_world_iseki_destroystage.hlsl" />
+  </ItemGroup>
+</Project>

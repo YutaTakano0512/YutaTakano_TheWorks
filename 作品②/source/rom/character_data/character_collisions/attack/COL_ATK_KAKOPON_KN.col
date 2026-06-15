@@ -1,0 +1,17 @@
+//囲んでポンの攻撃判定
+
+//攻撃力
+power: 150
+
+//ヒットストップ(攻撃側)
+hitStopAttacker: 0
+
+//ヒットストップ(受け側)
+hitStopReciever: 40
+
+//一度ヒットしてから再度ヒットするまでの間隔(フレーム)
+//かこポンの仕様は特殊なので機能しません
+hitCycle: 0
+
+//属性
+attribute: PLAYER_KAKOPON_ATTACK

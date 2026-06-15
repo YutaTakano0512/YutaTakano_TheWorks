@@ -1,0 +1,30 @@
+//ステータス
+
+//名前(正式名称)
+fullName: 司令型レガトス
+
+//名前(通称)
+nickName: レガトス
+
+//体力
+hp: 200
+//接触ダメージ判定の参照ファイル名
+defaultColAtkName: COL_ATK_ENEMY_REGATOSU
+
+//種類
+family: ENEMY
+
+//ステータスのタイプ
+statusType: ENEMY_MIDIUM
+
+//通常攻撃に対するダメージ倍率
+attributeDamageMod: PLAYER_NORMAL_ATTACK : 0.2
+attributeDamageMod: PLAYER_KAKOPON_ATTACK : 3.0
+
+
+//見た目の調整パラメータ
+scale: 1.5
+//posY: 50.0
+//posZ: 80.0
+posY: 55.0
+posZ: -15.0

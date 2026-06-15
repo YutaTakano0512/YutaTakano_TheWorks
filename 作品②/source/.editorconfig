@@ -1,0 +1,9 @@
+root = true
+
+[*]
+end_of_line = lf
+indent_style = space
+indent_size = 4
+
+[.{h(pp),c(pp),t(pp)}]
+charset = utf-8

@@ -1,0 +1,28 @@
+//ステータス 
+
+//名前(正式名称)
+fullName: 統制型インぺリウス
+
+//名前(通称)
+nickName: インぺリウス
+
+//体力
+hp: 12000
+
+//接触ダメージ判定の参照ファイル名
+//defaultColAtkName: COL_ATK_ENEMY_BOSS_INPERIUSU
+
+//種類
+family: ENEMY
+
+//ステータスのタイプ
+statusType: ENEMY_BOSS
+
+//通常攻撃に対するダメージ倍率
+attributeDamageMod: PLAYER_NORMAL_ATTACK : 0.25
+
+//見た目の調整パラメータ
+scale: 4.5
+//scale: 2.5
+//posY: 245.0
+//posZ: -250.0

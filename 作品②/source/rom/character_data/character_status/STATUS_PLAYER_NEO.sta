@@ -1,0 +1,20 @@
+//ステータス
+
+//名前(正式名称)
+fullName: 神崎ネオ
+
+//名前(通称)
+nickName: ネオちゃん
+//体力
+hp: 500
+
+//種類
+family: PLAYER
+
+//ステータスのタイプ
+statusType: PLAYER
+
+//見た目の調整パラメータ
+scale: 0.8
+posY: 130.0
+posZ: -20.0

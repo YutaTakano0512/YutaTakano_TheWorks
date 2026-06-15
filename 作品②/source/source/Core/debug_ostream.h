@@ -1,0 +1,39 @@
+/*==============================================================================
+   debug ostreamÇçÏÇ¡ÇƒégÇ®Ç§ [debug_ostream.h]
+                                                         Author : 
+                                                         Date   : 2025/4/21
+    Shift_JISÇÃÇ›ëŒâû
+==============================================================================*/
+#ifndef DEBUG_OSTREAM_H 
+#define DEBUG_OSTREAM_H 
+
+#include <Windows.h> 
+#include <sstream> 
+namespace hal
+{
+    class debugbuf : public std::basic_stringbuf<char, std::char_traits<char>>
+    {
+    public:
+        virtual ~debugbuf() {
+            sync();
+        }
+    protected:
+        int sync() {
+#if defined(_DEBUG) || defined(DEBUG)
+            OutputDebugStringA(str().c_str());
+            str(std::basic_string<char>());
+#endif
+            return 0;
+        }
+    };
+    class debug_ostream : public std::basic_ostream<char, std::char_traits<char>>
+    {
+    public:
+        debug_ostream()
+            : std::basic_ostream<char, std::char_traits<char>>(new debugbuf()) {}
+        ~debug_ostream() { delete rdbuf(); }
+    };
+    extern debug_ostream dout;
+}
+
+#endif // BASIC_DEBUG_OSTREAM_H 

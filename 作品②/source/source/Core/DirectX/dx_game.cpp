@@ -1,0 +1,101 @@
+
+//---------------------------------------------------------------------------
+// game.cpp
+// 
+// sougo hara  2024/05/14
+//---------------------------------------------------------------------------
+
+#include "../../Game/Configuration/configuration.h"
+#include "../../main.h"
+
+#include "../Input/keyboard.h"
+#include "../Input/mouse.h"
+
+#include "dx.h"
+#include "dx_game.h"
+#include "dx_camera.h"
+#include "dx_sound.h"
+
+#include "dx_shader.h"
+#include "dx_model.h"
+
+#include "../../game_main.h"
+
+static unsigned int g_GameFrame = 0;
+
+
+//
+// ÉQÅ[ÉÄ èâä˙âª
+//
+void DX_GameInitialize(GAME_INIT_SET set)
+{
+	DX_INIT_SET dx_set = {};
+	dx_set.hWnd = set.hWnd;
+
+	DX_INIT_RESULT dx_init_result = {};
+	DXInitialize(dx_set, &dx_init_result);
+
+	//TextureInitialize(dx_init_result.device);
+
+	DX_ShaderInitialize(dx_init_result.device, dx_init_result.deviceContext);
+	//SpriteInitialize(dx_init_result.device, dx_init_result.deviceContext);
+	DX_SoundInitialize();
+	DX_CameraInitialize();
+
+    DX_ModelInitialize();
+
+    GameMainInitialize();
+}
+
+//
+// ÉQÅ[ÉÄ èIóπèàóù
+//
+void DX_GameFinalize(void)
+{
+    GameMainFinalize();
+
+    DX_ModelFinalize();
+
+	DX_CameraFinalize();
+	DX_SoundFinalize();
+	//SpriteFinalize();
+	DX_ShaderFinalize();
+
+	//TextureFinalize();
+
+	DXFinalize();
+}
+
+//
+// ÉQÅ[ÉÄ çXêV
+//
+void DX_GameUpdate(void)
+{
+    GameMainUpdate();
+
+	g_GameFrame++;
+}
+
+//
+// ÉQÅ[ÉÄ ï`âÊ
+//
+void DX_GameDraw(void)
+{
+    GameMainDraw();
+}
+
+
+//
+// ÉQÅ[ÉÄ ÉãÅ[Év
+//
+void DX_GameLoop(void)
+{
+	DX_GameUpdate();
+	DX_GameDraw();
+}
+
+
+unsigned int DX_GameGetFrame()
+{
+	return g_GameFrame;
+}

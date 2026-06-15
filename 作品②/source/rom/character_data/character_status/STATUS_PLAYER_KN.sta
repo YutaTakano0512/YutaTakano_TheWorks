@@ -1,0 +1,19 @@
+//ステータス
+
+//名前(正式名称)
+fullName: 破壊型コントリウス
+
+//名前(通称)
+nickName: コントリウス
+//体力
+hp: 1750
+
+//種類
+family: PLAYER
+
+//ステータスのタイプ
+statusType: PLAYER
+
+//見た目の調整パラメータ
+scale: 1.0
+posZ: -210.0

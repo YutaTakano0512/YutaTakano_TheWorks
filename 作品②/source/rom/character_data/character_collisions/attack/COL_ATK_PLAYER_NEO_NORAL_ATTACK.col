@@ -1,0 +1,16 @@
+//攻撃判定 プレイヤー通常攻撃 ネオちゃん
+
+//攻撃力
+power: 20
+
+//ヒットストップ(攻撃側)
+hitStopAttacker: 0
+
+//ヒットストップ(受け側)
+hitStopReciever: 3
+
+//一度ヒットしてから再度ヒットするまでの間隔(フレーム)
+hitCycle: 10
+
+//属性
+attribute: PLAYER_NORMAL_ATTACK
