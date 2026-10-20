@@ -1,0 +1,16 @@
+//攻撃判定 プレイヤースキル コントリウス
+
+//攻撃力
+power: 30
+
+//ヒットストップ(攻撃側)
+hitStopAttacker: 0
+
+//ヒットストップ(受け側)
+hitStopReciever: 10
+
+//一度ヒットしてから再度ヒットするまでの間隔(フレーム)
+hitCycle: 6
+
+//属性
+attribute: PLAYER_SKILL_ATTACK

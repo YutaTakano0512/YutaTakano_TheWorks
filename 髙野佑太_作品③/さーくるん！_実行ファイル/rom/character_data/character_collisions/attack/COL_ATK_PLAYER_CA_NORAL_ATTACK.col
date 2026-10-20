@@ -1,0 +1,16 @@
+//攻撃判定 プレイヤー通常攻撃 CA
+
+//攻撃力
+power: 40
+
+//ヒットストップ(攻撃側)
+hitStopAttacker: 16
+
+//ヒットストップ(受け側)
+hitStopReciever: 16
+
+//一度ヒットしてから再度ヒットするまでの間隔(フレーム)
+hitCycle: 60
+
+//属性
+attribute: PLAYER_NORMAL_ATTACK

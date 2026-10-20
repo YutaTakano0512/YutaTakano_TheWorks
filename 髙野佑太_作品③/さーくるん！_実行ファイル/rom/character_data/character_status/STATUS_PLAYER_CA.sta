@@ -1,0 +1,22 @@
+//ステータス
+
+//名前(正式名称)
+fullName: コンセプトアートくん
+
+//名前(通称)
+nickName: CAくん
+//体力
+hp: 900
+
+//種類
+family: PLAYER
+
+//ステータスのタイプ
+statusType: PLAYER
+
+//見た目の調整パラメータ
+scale: 0.8
+//posY: 160.0
+//posZ: 60.0
+posY: 135.0
+posZ: -20.0

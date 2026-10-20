@@ -1,0 +1,20 @@
+//攻撃判定 プレイヤー通常攻撃 コントリウス
+
+//攻撃力
+power: 160
+
+//ヒットストップ(攻撃側)
+hitStopAttacker: 8
+
+//ヒットストップ(受け側)
+hitStopReciever: 20
+
+//一度ヒットしてから再度ヒットするまでの間隔(フレーム)
+hitCycle: 60
+
+//防御貫通率
+guardIgnoreMod: 0.75
+
+//属性
+//attribute: PLAYER_NORMAL_ATTACK
+attribute: PLAYER_SKILL_ATTACK

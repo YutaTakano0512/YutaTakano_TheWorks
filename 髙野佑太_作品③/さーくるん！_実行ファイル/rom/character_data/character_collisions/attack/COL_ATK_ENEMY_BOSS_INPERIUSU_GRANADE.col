@@ -1,0 +1,17 @@
+//攻撃判定 インぺリウス グレネード
+
+//攻撃力
+power: 90
+
+//ヒットストップ(攻撃側)
+hitStopAttacker: 5
+//ヒットストップ(受け側)
+hitStopReciever: 5
+
+//一度ヒットしてから再度ヒットするまでの間隔(フレーム)
+hitCycle: 60
+
+//硬直時間(フレーム)
+hitStern: 80
+//吹っ飛ばし力
+knockBackPower: 20.0

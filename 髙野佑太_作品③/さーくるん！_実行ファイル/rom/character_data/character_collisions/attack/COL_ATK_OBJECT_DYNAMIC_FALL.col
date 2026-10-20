@@ -1,0 +1,18 @@
+//攻撃判定
+
+//攻撃力
+power: 1
+
+//ヒットストップ(攻撃側)
+hitStopAttacker: 6
+
+//ヒットストップ(受け側)
+hitStopReciever: 6
+
+//一度ヒットしてから再度ヒットするまでの間隔(フレーム)
+hitCycle: 60
+
+//硬直時間(フレーム)
+hitStern: 40
+//吹っ飛ばし力
+knockBackPower: 8.0

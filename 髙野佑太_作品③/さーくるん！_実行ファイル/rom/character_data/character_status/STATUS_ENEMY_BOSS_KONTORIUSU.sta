@@ -1,0 +1,24 @@
+//ステータス 
+
+//名前(正式名称)
+fullName: 破壊型コントリウス
+
+//名前(通称)
+nickName: コントリウス
+
+//体力
+hp: 6500
+//接触ダメージ判定の参照ファイル名
+//defaultColAtkName: COL_ATK_ENEMY_BOSS_KONTORIUSU
+
+//種類
+family: ENEMY
+
+//ステータスのタイプ
+statusType: ENEMY_BOSS
+
+//通常攻撃に対するダメージ倍率
+attributeDamageMod: PLAYER_NORMAL_ATTACK : 1.0
+
+//見た目の調整パラメータ
+scale: 1.0
